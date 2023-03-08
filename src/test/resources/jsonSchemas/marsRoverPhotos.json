@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "photos": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "sol": {
+              "type": "integer"
+            },
+            "camera": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rover_id": {
+                  "type": "integer"
+                },
+                "full_name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rover_id",
+                "full_name"
+              ]
+            },
+            "img_src": {
+              "type": "string"
+            },
+            "earth_date": {
+              "type": "string"
+            },
+            "rover": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "landing_date": {
+                  "type": "string"
+                },
+                "launch_date": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "landing_date",
+                "launch_date",
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "sol",
+            "camera",
+            "img_src",
+            "earth_date",
+            "rover"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "photos"
+  ]
+}
