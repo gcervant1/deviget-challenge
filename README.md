@@ -1,8 +1,8 @@
 ## Deviget SDET-Test challenge
-The porpuse of this challenge is to demostrate the capabilities to create and Backend Framewoek from scratch using Java.
-##Author 
+The purpose of this challenge is to demostrate the capabilities to create and Backend Framewoek from scratch using Java.
+## Author 
 Gonzalo Cervantes - Candidate for SDET BackEnd
-###Application under test
+### Application under test
 * NASA OPEN API - https://api.nasa.gov/index.html#browseAPI
 
 ### Installation Required
